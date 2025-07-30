@@ -1,0 +1,216 @@
+.gallery-page-container {
+  /* Uses content padding from App.css */
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Slightly larger cards */
+  gap: 1.5rem; /* More gap */
+  margin-top: 1rem; /* Reduced top margin */
+}
+
+.center-text {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--text-secondary);
+}
+
+.error-text {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--danger-color);
+  background-color: rgba(239, 68, 68, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--danger-color);
+}
+
+.empty-gallery-message {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+    border: 1px dashed var(--border-color);
+}
+
+.empty-gallery-message p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.create-link-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--bg-secondary);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.create-link-button:hover {
+    background-color: var(--primary-hover);
+}
+
+/* --- Job Application Card Styles --- */
+.job-card {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem; /* More padding */
+  background-color: var(--bg-secondary);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* Tailwind-like shadow */
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; /* Adjusted gap */
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.job-card:hover {
+    border-color: rgba(79, 70, 229, 0.4); /* Subtle primary border */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.job-card.active-application {
+    border-left: 4px solid var(--primary-color); /* Add a prominent left border */
+    /* Optionally add a subtle background tint */
+    /* background-color: rgba(79, 70, 229, 0.02); */
+}
+
+.job-card h3 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.15rem; /* Adjusted size */
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.job-card p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem; /* Slightly smaller text */
+    line-height: 1.5;
+}
+
+.job-card p strong {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* Status Badge */
+.status-badge {
+    display: inline-block;
+    padding: 0.25em 0.6em;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.status-applied {
+    background-color: rgba(59, 130, 246, 0.1); /* Blue */
+    color: #3b82f6;
+}
+.status-interviewing {
+    background-color: rgba(245, 158, 11, 0.1); /* Amber */
+    color: var(--warning-color);
+}
+.status-offer {
+    background-color: rgba(16, 185, 129, 0.1); /* Emerald */
+    color: var(--secondary-color);
+}
+.status-rejected {
+    background-color: rgba(239, 68, 68, 0.1); /* Red */
+    color: var(--danger-color);
+}
+
+.job-card .card-actions {
+    margin-top: 1rem; /* More space above actions */
+    padding-top: 1rem; /* Add padding */
+    border-top: 1px solid var(--border-color); /* Separator line */
+    display: flex;
+    gap: 0.75rem; /* Adjusted gap */
+    justify-content: flex-end; /* Align buttons to the right */
+}
+
+.card-button {
+  padding: 0.5rem 1rem; /* Adjusted padding */
+  text-decoration: none;
+  border-radius: 6px; /* Consistent radius */
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.view-button {
+  background-color: var(--primary-color);
+  color: var(--bg-secondary);
+}
+.view-button:hover {
+    background-color: var(--primary-hover);
+}
+
+.edit-button {
+  background-color: transparent; /* Ghost button style */
+  color: var(--text-secondary);
+  border-color: var(--border-color);
+}
+.edit-button:hover {
+    background-color: var(--bg-primary); /* Slight background on hover */
+    border-color: var(--text-secondary);
+    color: var(--text-primary);
+}
+
+/* --- Statistics Section --- */
+.statistics-section {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+}
+
+.statistics-section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-value {
+    font-size: 1.75rem; /* Larger value */
+    font-weight: 700;   /* Bold */
+    color: var(--text-primary);
+    line-height: 1.2;
+}
+
+/* Colorize stat values based on status */
+.stat-value.status-applied { color: #3b82f6; }
+.stat-value.status-interviewing { color: var(--warning-color); }
+.stat-value.status-offer { color: var(--secondary-color); }
+.stat-value.status-rejected { color: var(--danger-color); }
+
+.stat-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+} 

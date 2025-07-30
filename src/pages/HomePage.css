@@ -1,0 +1,88 @@
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text */
+  padding: 3rem 1rem; /* Vertical and horizontal padding */
+  max-width: 900px; /* Limit max width */
+  margin: 0 auto; /* Center container itself */
+}
+
+.home-header {
+  margin-bottom: 2.5rem;
+}
+
+.home-header h1 {
+  font-size: 2.5rem; /* Larger title */
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  max-width: 600px; /* Limit subtitle width */
+  margin: 0 auto 1.5rem auto; /* Center and add bottom margin */
+}
+
+.home-content p {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 2rem auto; /* Center and add bottom margin */
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  justify-content: center;
+  gap: 1.5rem; /* Space between buttons */
+}
+
+.home-button {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+}
+
+.home-button:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.home-button.primary {
+  background-color: var(--primary-color);
+  color: var(--bg-secondary);
+}
+
+.home-button.primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.home-button.secondary {
+  background-color: var(--bg-secondary);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.home-button.secondary:hover {
+  background-color: rgba(79, 70, 229, 0.05); /* Subtle primary background */
+  border-color: var(--primary-hover);
+}
+
+/* Optional illustration styling */
+/* 
+.home-illustration {
+    margin-top: 3rem;
+}
+.home-illustration img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; 
+}
+*/ 

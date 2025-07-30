@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Color Palette */
+  --primary-color: #4f46e5; /* Indigo */
+  --primary-hover: #4338ca;
+  --secondary-color: #10b981; /* Emerald */
+  --danger-color: #ef4444; /* Red */
+  --danger-hover: #dc2626;
+  --warning-color: #f59e0b; /* Amber */
+  --warning-hover: #d97706;
+  
+  --text-primary: #111827; /* Gray 900 */
+  --text-secondary: #6b7280; /* Gray 500 */
+  --bg-primary: #f9fafb; /* Gray 50 */
+  --bg-secondary: #ffffff; /* White */
+  --border-color: #e5e7eb; /* Gray 200 */
+
+  /* Font */
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  line-height: 1.6; /* Ensure consistent line height */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600; /* Bolder headings */
+  color: var(--text-primary);
+  line-height: 1.3;
+  margin-bottom: 0.75em; /* Add some space below headings */
+}
+
+h1 {
+  font-size: 2rem; /* Larger H1 */
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin-bottom: 1em; /* Add space between paragraphs */
+  color: var(--text-secondary);
+}
+
+a {
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: inherit;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--primary-hover);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.2s ease, color 0.2s ease;
+}
+button:hover {
+  border-color: var(--primary-color);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+input, textarea, select {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2); /* Subtle focus ring */
+}
+
+/* --- Alert Styles --- */
+.alert {
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.alert-success {
+  color: #0f5132; /* Dark green text */
+  background-color: #d1e7dd; /* Light green background */
+  border-color: #badbcc; 
+}
+
+.alert-error {
+  color: #842029; /* Dark red text */
+  background-color: #f8d7da; /* Light red background */
+  border-color: #f5c2c7;
+}
+
+.alert-warning {
+  color: #664d03; /* Dark yellow text */
+  background-color: #fff3cd; /* Light yellow background */
+  border-color: #ffecb5;
+}
+
+/* Remove default Vite styles if they exist - adjust as needed */
+/* You might need to delete or comment out existing #root, .logo, .card etc. styles */
+
+/* Example: Comment out default logo styles if present */
+/* 
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+*/

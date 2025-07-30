@@ -1,0 +1,95 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh; /* Ensure app takes full height */
+}
+
+.sidebar {
+  width: 240px; /* Slightly wider */
+  flex-shrink: 0; /* Prevent sidebar from shrinking */
+  background-color: var(--bg-secondary); /* White background */
+  border-right: 1px solid var(--border-color);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Space between links */
+}
+
+/* Simple Logo Placeholder */
+.sidebar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 24px; /* Space below logo */
+  text-decoration: none;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar a:hover {
+  background-color: rgba(79, 70, 229, 0.05); /* Subtle primary hover */
+  color: var(--primary-color);
+}
+
+/* Active link styling - requires NavLink in App.jsx */
+.sidebar a.active {
+    background-color: var(--primary-color);
+    color: var(--bg-secondary); /* White text on active */
+}
+
+.content {
+  flex-grow: 1;
+  padding: 32px; /* More padding in content area */
+  background-color: var(--bg-primary);
+  overflow-y: auto; /* Allow content scrolling if needed */
+}

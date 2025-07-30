@@ -1,0 +1,82 @@
+/* Reuse styles from CreatePage.css for the form structure */
+@import url('./CreatePage.css');
+
+.update-page-container {
+  /* Uses content padding from App.css */
+}
+
+/* Styles specific to UpdatePage or overrides */
+.update-form {
+  /* Inherits most styles from .create-form */
+  /* No specific border color override unless desired */
+  /* border-color: var(--warning-color); */ 
+}
+
+.update-form h1 {
+    /* Inherits from .create-form h1 */
+    margin-bottom: 1.5rem;
+}
+
+/* Style the buttons container */
+.update-actions {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 1.5rem; /* Adjusted margin */
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color); 
+    gap: 1rem; /* Add gap between buttons */
+}
+
+.update-button {
+  /* Inherits base button styles */
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--bg-secondary);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.update-button:hover {
+    background-color: var(--primary-hover);
+}
+
+.delete-button {
+  /* Inherits base button styles */
+  padding: 0.75rem 1.5rem;
+  background-color: var(--danger-color);
+  color: var(--bg-secondary);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.delete-button:hover {
+    background-color: var(--danger-hover);
+}
+
+/* Loading/Error text */
+.center-text {
+  text-align: center;
+  margin-top: 3rem;
+  color: var(--text-secondary);
+}
+
+.error-text {
+  text-align: center;
+  margin-top: 3rem;
+  color: var(--danger-color);
+}
+
+/* Form error (inherits from CreatePage.css) */
+.update-form .form-error {
+  /* Ensure it sits correctly above the actions */
+  margin-bottom: 1.5rem; 
+} 
