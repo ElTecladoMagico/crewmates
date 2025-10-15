@@ -1,10 +1,7 @@
-# Web Development Project 7 - *Name of App Here*
+# Web Development Project 7 - *Crewmates*
+Submitted by: **Pedro Gabriel Mantese Masegosa**
 
-Submitted by: **Your Name Here**
-
-This web app: **insert description**
-
-Time spent: **X** hours spent in total
+Time spent: **8** hours spent in total
 
 ## Required Features
 
